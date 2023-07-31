@@ -8,7 +8,7 @@ const { dbConnect } = require("./utiles/db");
 require("dotenv").config();
 
 app.use(cors({
-    origin:['http://localhost:3001'],
+    origin:['http://localhost:3000'],
     credentials: true
 }))
 
