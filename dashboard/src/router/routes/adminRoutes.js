@@ -8,6 +8,8 @@ const PaymentRequest = lazy(()=>import("../../views/admin/PaymentRequest"))
 const SellerRequest = lazy(()=>import("../../views/admin/SellerRequest"))
 const DeactiveSellers = lazy(()=>import("../../views/admin/DeactiveSellers"))
 const SellerDetails = lazy(()=>import("../../views/admin/SellerDetails"))
+const ChatSeller = lazy(()=>import("../../views/admin/ChatSeller"))
+const OrderDetails = lazy(()=>import("../../views/admin//OrderDetails "))
 
 export const adminRoutes = [
     {
@@ -51,8 +53,20 @@ export const adminRoutes = [
         ability:"admin"
     },
     {
-        path:"admin/dashboard/seller/details/1",
+        path:"admin/dashboard/seller/details/:sellerId",
         element: <SellerDetails/>,
+        ability:"admin"
+    }
+    ,
+    {
+        path:"admin/dashboard/chat-sellers",
+        element: <ChatSeller/>,
+        ability:"admin"
+    }
+    ,
+    {
+        path:"admin/dashboard/order/details/:orderId",
+        element: <OrderDetails/>,
         ability:"admin"
     }
 ]
