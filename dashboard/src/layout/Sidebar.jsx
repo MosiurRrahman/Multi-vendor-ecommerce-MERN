@@ -6,7 +6,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
   const [allNav, setAllNav] = useState([]);
   const {pathname} = useLocation();
   useEffect(()=>{
-    const navs = getNavs("admin");
+    const navs = getNavs("seller");
     setAllNav(navs)
   },[])
   console.log(allNav);
