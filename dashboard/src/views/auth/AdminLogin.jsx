@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux';
-import { admin_login, messageClear } from "../../store/Reducers/authoReducer";
+import { admin_login, messageClear } from "../../store/Reducers/authReducer";
 import { ScaleLoader} from "react-spinners"
 import {toast} from 'react-hot-toast'
 const AdminLogin = () => {

@@ -1,5 +1,5 @@
-import authoReducer from "./Reducers/authoReducer";
+import authReducer from "./Reducers/authReducer";
 const rootReducert = {
-  auth: authoReducer,
+  auth: authReducer,
 };
 export default rootReducert;
